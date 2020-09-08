@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GGViewControllerID" id="BYZ-38-t0r" customClass="GGViewController" customModule="GreatGirdProduct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykH-gd-58k">
+                                <rect key="frame" x="0.0" y="0.0" width="136" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="aS7-wj-FaI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon_face" translatesAutoresizingMaskIntoConstraints="NO" id="RyM-6F-YxU">
+                                <rect key="frame" x="80.666666666666657" y="64" width="333.33333333333337" height="601"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon_editPic" translatesAutoresizingMaskIntoConstraints="NO" id="lhX-rV-T8n">
+                                <rect key="frame" x="80.666666666666686" y="735" width="154" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lhX-rV-T8n" secondAttribute="height" multiplier="154:57" id="Ylj-VU-c2x"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foT-RR-RZN">
+                                <rect key="frame" x="80.666666666666686" y="735" width="154" height="57"/>
+                                <connections>
+                                    <action selector="clickPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Xk-xb-jsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="foT-RR-RZN" firstAttribute="width" secondItem="lhX-rV-T8n" secondAttribute="width" id="1Yw-Tl-gyb"/>
+                            <constraint firstItem="foT-RR-RZN" firstAttribute="centerY" secondItem="lhX-rV-T8n" secondAttribute="centerY" id="4SJ-XM-FvX"/>
+                            <constraint firstItem="RyM-6F-YxU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="CoJ-r1-WpY"/>
+                            <constraint firstItem="RyM-6F-YxU" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ykH-gd-58k" secondAttribute="trailing" constant="100" id="JPC-9o-rZH"/>
+                            <constraint firstItem="foT-RR-RZN" firstAttribute="height" secondItem="lhX-rV-T8n" secondAttribute="height" id="Nn9-e7-uCf"/>
+                            <constraint firstItem="lhX-rV-T8n" firstAttribute="leading" secondItem="RyM-6F-YxU" secondAttribute="leading" id="Ogb-VL-qRm"/>
+                            <constraint firstItem="ykH-gd-58k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OvX-1m-VQc"/>
+                            <constraint firstItem="j1n-sj-c8x" firstAttribute="bottom" secondItem="lhX-rV-T8n" secondAttribute="bottom" constant="70" id="VEZ-MR-6fA"/>
+                            <constraint firstItem="j1n-sj-c8x" firstAttribute="trailing" secondItem="RyM-6F-YxU" secondAttribute="trailing" id="VXR-oM-18v"/>
+                            <constraint firstItem="ykH-gd-58k" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Yd2-ev-s12"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ykH-gd-58k" secondAttribute="trailing" constant="100" id="dyX-yG-MS3"/>
+                            <constraint firstItem="foT-RR-RZN" firstAttribute="centerX" secondItem="lhX-rV-T8n" secondAttribute="centerX" id="ftD-7n-Aew"/>
+                            <constraint firstItem="RyM-6F-YxU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="i1M-n4-9vM"/>
+                            <constraint firstItem="lhX-rV-T8n" firstAttribute="top" secondItem="RyM-6F-YxU" secondAttribute="bottom" constant="70" id="mJd-hb-ufB"/>
+                            <constraint firstItem="ykH-gd-58k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yWF-Hv-5iB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j1n-sj-c8x"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.35869565217392"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_editPic" width="153.33332824707031" height="56.666667938232422"/>
+        <image name="icon_face" width="333.33334350585938" height="433.33334350585938"/>
+    </resources>
 </document>

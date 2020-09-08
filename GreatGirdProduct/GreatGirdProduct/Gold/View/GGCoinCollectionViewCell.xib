@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GGCoinCollectionViewCellID" id="gTV-IL-0wX" customClass="GGCoinCollectionViewCell" customModule="GreatGirdProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="214"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9A-Lg-7fv">
+                        <rect key="frame" x="52.5" y="123" width="48.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAh-4I-E2O">
+                        <rect key="frame" x="29.5" y="164" width="94" height="30"/>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="0fn-cf-hiO"/>
+                            <constraint firstAttribute="height" constant="30" id="Oy8-Zq-9xB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <state key="normal" title="$0.99">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="clickMoneyBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="UxJ-07-uGk"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon_gold_big" translatesAutoresizingMaskIntoConstraints="NO" id="vjR-jw-QBj">
+                        <rect key="frame" x="44.5" y="36" width="64" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="fP1-EU-Yw7"/>
+                            <constraint firstAttribute="width" constant="64" id="l3i-HM-LA9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="sAh-4I-E2O" firstAttribute="centerX" secondItem="e9A-Lg-7fv" secondAttribute="centerX" id="Ca3-Jb-efP"/>
+                <constraint firstItem="sAh-4I-E2O" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dra-Jw-0qv"/>
+                <constraint firstItem="e9A-Lg-7fv" firstAttribute="centerX" secondItem="vjR-jw-QBj" secondAttribute="centerX" id="FJl-ig-8eO"/>
+                <constraint firstItem="e9A-Lg-7fv" firstAttribute="top" secondItem="vjR-jw-QBj" secondAttribute="bottom" constant="25" id="Gr3-2W-dDx"/>
+                <constraint firstItem="sAh-4I-E2O" firstAttribute="top" secondItem="e9A-Lg-7fv" secondAttribute="bottom" constant="20" id="ZLA-Oq-l1J"/>
+                <constraint firstAttribute="bottom" secondItem="sAh-4I-E2O" secondAttribute="bottom" constant="20" id="ZtD-T5-00o"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="153" height="214"/>
+            <connections>
+                <outlet property="goldNumLabel" destination="e9A-Lg-7fv" id="TRZ-tc-dNf"/>
+                <outlet property="moneyBtn" destination="sAh-4I-E2O" id="2iE-PF-oyh"/>
+            </connections>
+            <point key="canvasLocation" x="-153" y="71"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_gold_big" width="64" height="62"/>
+    </resources>
+</document>

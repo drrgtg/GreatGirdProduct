@@ -3,27 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081E9F8AFB192ADC68A33986 /* Pods_GreatGirdProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE77926DC74284D2A75C4DD2 /* Pods_GreatGirdProduct.framework */; };
 		7AAC132525072DDB0064393A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC132425072DDB0064393A /* AppDelegate.swift */; };
-		7AAC132725072DDB0064393A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC132625072DDB0064393A /* SceneDelegate.swift */; };
-		7AAC132925072DDB0064393A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC132825072DDB0064393A /* ViewController.swift */; };
+		7AAC132925072DDB0064393A /* GGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC132825072DDB0064393A /* GGViewController.swift */; };
 		7AAC132C25072DDB0064393A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC132A25072DDB0064393A /* Main.storyboard */; };
 		7AAC132E25072DDD0064393A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC132D25072DDD0064393A /* Assets.xcassets */; };
 		7AAC133125072DDD0064393A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC132F25072DDD0064393A /* LaunchScreen.storyboard */; };
+		7AAC133F25072EDF0064393A /* JPToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC133B25072EDE0064393A /* JPToast.swift */; };
+		7AAC134025072EDF0064393A /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC133E25072EDE0064393A /* QMUIConfigurationTemplate.m */; };
+		7AAC1345250734DB0064393A /* GGBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1344250734DB0064393A /* GGBaseNavigationController.swift */; };
+		7AAC1347250735680064393A /* GGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1346250735680064393A /* GGBaseViewController.swift */; };
+		7AAC1349250735A30064393A /* GGConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1348250735A30064393A /* GGConstant.swift */; };
+		7AAC1350250735BF0064393A /* StickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC134B250735BF0064393A /* StickerView.bundle */; };
+		7AAC1351250735C00064393A /* SingleHandGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC134E250735BF0064393A /* SingleHandGestureRecognizer.m */; };
+		7AAC1352250735C00064393A /* StickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC134F250735BF0064393A /* StickerView.m */; };
+		7AAC1356250756390064393A /* GGEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1354250756390064393A /* GGEditViewController.swift */; };
+		7AAC1357250756390064393A /* GGEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC1355250756390064393A /* GGEditViewController.xib */; };
+		7AAC135A250757990064393A /* GGGoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1359250757990064393A /* GGGoldViewController.swift */; };
+		7AAC135E250759560064393A /* GGCoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC135C250759560064393A /* GGCoinCollectionViewCell.swift */; };
+		7AAC135F250759560064393A /* GGCoinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC135D250759560064393A /* GGCoinCollectionViewCell.xib */; };
+		7AAC1362250761590064393A /* GGSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1361250761590064393A /* GGSettingViewController.swift */; };
+		7AAC1366250762CD0064393A /* GGSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1364250762CD0064393A /* GGSettingTableViewCell.swift */; };
+		7AAC1367250762CD0064393A /* GGSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC1365250762CD0064393A /* GGSettingTableViewCell.xib */; };
+		7AAC136A250764850064393A /* GGPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1368250764850064393A /* GGPrivacyViewController.swift */; };
+		7AAC136B250764850064393A /* GGPrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC1369250764850064393A /* GGPrivacyViewController.xib */; };
+		7AAC136E250764960064393A /* GGTermServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC136C250764960064393A /* GGTermServiceViewController.swift */; };
+		7AAC136F250764960064393A /* GGTermServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC136D250764960064393A /* GGTermServiceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AAC132125072DDB0064393A /* GreatGirdProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreatGirdProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAC132425072DDB0064393A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AAC132625072DDB0064393A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AAC132825072DDB0064393A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AAC132825072DDB0064393A /* GGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGViewController.swift; sourceTree = "<group>"; };
 		7AAC132B25072DDB0064393A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AAC132D25072DDD0064393A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AAC133025072DDD0064393A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AAC133225072DDD0064393A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AAC133B25072EDE0064393A /* JPToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPToast.swift; sourceTree = "<group>"; };
+		7AAC133D25072EDE0064393A /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		7AAC133E25072EDE0064393A /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
+		7AAC134325072F190064393A /* GreatGirdProduct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GreatGirdProduct-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AAC1344250734DB0064393A /* GGBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGBaseNavigationController.swift; sourceTree = "<group>"; };
+		7AAC1346250735680064393A /* GGBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGBaseViewController.swift; sourceTree = "<group>"; };
+		7AAC1348250735A30064393A /* GGConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGConstant.swift; sourceTree = "<group>"; };
+		7AAC134B250735BF0064393A /* StickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StickerView.bundle; sourceTree = "<group>"; };
+		7AAC134C250735BF0064393A /* StickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerView.h; sourceTree = "<group>"; };
+		7AAC134D250735BF0064393A /* SingleHandGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleHandGestureRecognizer.h; sourceTree = "<group>"; };
+		7AAC134E250735BF0064393A /* SingleHandGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleHandGestureRecognizer.m; sourceTree = "<group>"; };
+		7AAC134F250735BF0064393A /* StickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerView.m; sourceTree = "<group>"; };
+		7AAC1354250756390064393A /* GGEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGEditViewController.swift; sourceTree = "<group>"; };
+		7AAC1355250756390064393A /* GGEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGEditViewController.xib; sourceTree = "<group>"; };
+		7AAC1359250757990064393A /* GGGoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGGoldViewController.swift; sourceTree = "<group>"; };
+		7AAC135C250759560064393A /* GGCoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGCoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		7AAC135D250759560064393A /* GGCoinCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGCoinCollectionViewCell.xib; sourceTree = "<group>"; };
+		7AAC1361250761590064393A /* GGSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGSettingViewController.swift; sourceTree = "<group>"; };
+		7AAC1364250762CD0064393A /* GGSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGSettingTableViewCell.swift; sourceTree = "<group>"; };
+		7AAC1365250762CD0064393A /* GGSettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGSettingTableViewCell.xib; sourceTree = "<group>"; };
+		7AAC1368250764850064393A /* GGPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGPrivacyViewController.swift; sourceTree = "<group>"; };
+		7AAC1369250764850064393A /* GGPrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGPrivacyViewController.xib; sourceTree = "<group>"; };
+		7AAC136C250764960064393A /* GGTermServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGTermServiceViewController.swift; sourceTree = "<group>"; };
+		7AAC136D250764960064393A /* GGTermServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGTermServiceViewController.xib; sourceTree = "<group>"; };
+		9581311C490A5D4E9608AEA0 /* Pods-GreatGirdProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.release.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.release.xcconfig"; sourceTree = "<group>"; };
+		DC9B6447E6179F2404FCD79D /* Pods-GreatGirdProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.debug.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		DE77926DC74284D2A75C4DD2 /* Pods_GreatGirdProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreatGirdProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081E9F8AFB192ADC68A33986 /* Pods_GreatGirdProduct.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +89,8 @@
 			children = (
 				7AAC132325072DDB0064393A /* GreatGirdProduct */,
 				7AAC132225072DDB0064393A /* Products */,
+				E65DA3FB0C8B87B3E0B01667 /* Pods */,
+				CDFE97928CBBA3F7CB200128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +106,126 @@
 			isa = PBXGroup;
 			children = (
 				7AAC132425072DDB0064393A /* AppDelegate.swift */,
-				7AAC132625072DDB0064393A /* SceneDelegate.swift */,
-				7AAC132825072DDB0064393A /* ViewController.swift */,
+				7AAC132825072DDB0064393A /* GGViewController.swift */,
+				7AAC1360250761440064393A /* Setting */,
+				7AAC13582507577E0064393A /* Gold */,
+				7AAC13532507561D0064393A /* Edit */,
+				7AAC133925072EAE0064393A /* Base */,
 				7AAC132A25072DDB0064393A /* Main.storyboard */,
 				7AAC132D25072DDD0064393A /* Assets.xcassets */,
 				7AAC132F25072DDD0064393A /* LaunchScreen.storyboard */,
 				7AAC133225072DDD0064393A /* Info.plist */,
+				7AAC134325072F190064393A /* GreatGirdProduct-Bridging-Header.h */,
 			);
 			path = GreatGirdProduct;
+			sourceTree = "<group>";
+		};
+		7AAC133925072EAE0064393A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC133C25072EDE0064393A /* QMUITemplate */,
+				7AAC133A25072EDE0064393A /* Tool */,
+				7AAC1344250734DB0064393A /* GGBaseNavigationController.swift */,
+				7AAC1346250735680064393A /* GGBaseViewController.swift */,
+				7AAC1348250735A30064393A /* GGConstant.swift */,
+				7AAC134A250735BF0064393A /* StickerView-Framework */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7AAC133A25072EDE0064393A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC133B25072EDE0064393A /* JPToast.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7AAC133C25072EDE0064393A /* QMUITemplate */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC133D25072EDE0064393A /* QMUIConfigurationTemplate.h */,
+				7AAC133E25072EDE0064393A /* QMUIConfigurationTemplate.m */,
+			);
+			path = QMUITemplate;
+			sourceTree = "<group>";
+		};
+		7AAC134A250735BF0064393A /* StickerView-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC134B250735BF0064393A /* StickerView.bundle */,
+				7AAC134C250735BF0064393A /* StickerView.h */,
+				7AAC134F250735BF0064393A /* StickerView.m */,
+				7AAC134D250735BF0064393A /* SingleHandGestureRecognizer.h */,
+				7AAC134E250735BF0064393A /* SingleHandGestureRecognizer.m */,
+			);
+			path = "StickerView-Framework";
+			sourceTree = "<group>";
+		};
+		7AAC13532507561D0064393A /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1354250756390064393A /* GGEditViewController.swift */,
+				7AAC1355250756390064393A /* GGEditViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		7AAC13582507577E0064393A /* Gold */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1359250757990064393A /* GGGoldViewController.swift */,
+				7AAC135B250759410064393A /* View */,
+			);
+			path = Gold;
+			sourceTree = "<group>";
+		};
+		7AAC135B250759410064393A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC135C250759560064393A /* GGCoinCollectionViewCell.swift */,
+				7AAC135D250759560064393A /* GGCoinCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AAC1360250761440064393A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1361250761590064393A /* GGSettingViewController.swift */,
+				7AAC136C250764960064393A /* GGTermServiceViewController.swift */,
+				7AAC136D250764960064393A /* GGTermServiceViewController.xib */,
+				7AAC1368250764850064393A /* GGPrivacyViewController.swift */,
+				7AAC1369250764850064393A /* GGPrivacyViewController.xib */,
+				7AAC1363250762BC0064393A /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7AAC1363250762BC0064393A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1364250762CD0064393A /* GGSettingTableViewCell.swift */,
+				7AAC1365250762CD0064393A /* GGSettingTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDFE97928CBBA3F7CB200128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE77926DC74284D2A75C4DD2 /* Pods_GreatGirdProduct.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E65DA3FB0C8B87B3E0B01667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B6447E6179F2404FCD79D /* Pods-GreatGirdProduct.debug.xcconfig */,
+				9581311C490A5D4E9608AEA0 /* Pods-GreatGirdProduct.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AAC133525072DDD0064393A /* Build configuration list for PBXNativeTarget "GreatGirdProduct" */;
 			buildPhases = (
+				CA52698FAEE96E18EED4B4F1 /* [CP] Check Pods Manifest.lock */,
 				7AAC131D25072DDB0064393A /* Sources */,
 				7AAC131E25072DDB0064393A /* Frameworks */,
 				7AAC131F25072DDB0064393A /* Resources */,
+				63815DC3D19E40D0AC4EB9D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +289,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AAC133125072DDD0064393A /* LaunchScreen.storyboard in Resources */,
+				7AAC135F250759560064393A /* GGCoinCollectionViewCell.xib in Resources */,
 				7AAC132E25072DDD0064393A /* Assets.xcassets in Resources */,
+				7AAC1357250756390064393A /* GGEditViewController.xib in Resources */,
+				7AAC1350250735BF0064393A /* StickerView.bundle in Resources */,
+				7AAC1367250762CD0064393A /* GGSettingTableViewCell.xib in Resources */,
+				7AAC136F250764960064393A /* GGTermServiceViewController.xib in Resources */,
 				7AAC132C25072DDB0064393A /* Main.storyboard in Resources */,
+				7AAC136B250764850064393A /* GGPrivacyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63815DC3D19E40D0AC4EB9D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA52698FAEE96E18EED4B4F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreatGirdProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AAC131D25072DDB0064393A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAC132925072DDB0064393A /* ViewController.swift in Sources */,
+				7AAC132925072DDB0064393A /* GGViewController.swift in Sources */,
+				7AAC135A250757990064393A /* GGGoldViewController.swift in Sources */,
+				7AAC1362250761590064393A /* GGSettingViewController.swift in Sources */,
+				7AAC1352250735C00064393A /* StickerView.m in Sources */,
+				7AAC136A250764850064393A /* GGPrivacyViewController.swift in Sources */,
+				7AAC1366250762CD0064393A /* GGSettingTableViewCell.swift in Sources */,
+				7AAC136E250764960064393A /* GGTermServiceViewController.swift in Sources */,
+				7AAC1347250735680064393A /* GGBaseViewController.swift in Sources */,
+				7AAC1345250734DB0064393A /* GGBaseNavigationController.swift in Sources */,
+				7AAC1349250735A30064393A /* GGConstant.swift in Sources */,
+				7AAC1351250735C00064393A /* SingleHandGestureRecognizer.m in Sources */,
+				7AAC135E250759560064393A /* GGCoinCollectionViewCell.swift in Sources */,
+				7AAC133F25072EDF0064393A /* JPToast.swift in Sources */,
+				7AAC134025072EDF0064393A /* QMUIConfigurationTemplate.m in Sources */,
+				7AAC1356250756390064393A /* GGEditViewController.swift in Sources */,
 				7AAC132525072DDB0064393A /* AppDelegate.swift in Sources */,
-				7AAC132725072DDB0064393A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +506,19 @@
 		};
 		7AAC133625072DDD0064393A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9B6447E6179F2404FCD79D /* Pods-GreatGirdProduct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GreatGirdProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutu.GreatGirdProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GreatGirdProduct/GreatGirdProduct-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +526,19 @@
 		};
 		7AAC133725072DDD0064393A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9581311C490A5D4E9608AEA0 /* Pods-GreatGirdProduct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GreatGirdProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutu.GreatGirdProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GreatGirdProduct/GreatGirdProduct-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
