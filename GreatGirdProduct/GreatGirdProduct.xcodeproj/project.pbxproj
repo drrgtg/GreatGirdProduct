@@ -33,6 +33,10 @@
 		7AAC136B250764850064393A /* GGPrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC1369250764850064393A /* GGPrivacyViewController.xib */; };
 		7AAC136E250764960064393A /* GGTermServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC136C250764960064393A /* GGTermServiceViewController.swift */; };
 		7AAC136F250764960064393A /* GGTermServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC136D250764960064393A /* GGTermServiceViewController.xib */; };
+		7AAC137225076CB00064393A /* GGFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137125076CB00064393A /* GGFilterModel.swift */; };
+		7AAC137425076CE00064393A /* GGBackgroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137325076CE00064393A /* GGBackgroundModel.swift */; };
+		7AAC137625076CEA0064393A /* GGStickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137525076CEA0064393A /* GGStickerModel.swift */; };
+		7AAC137825076CF40064393A /* GGModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137725076CF40064393A /* GGModeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,10 @@
 		7AAC1369250764850064393A /* GGPrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGPrivacyViewController.xib; sourceTree = "<group>"; };
 		7AAC136C250764960064393A /* GGTermServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGTermServiceViewController.swift; sourceTree = "<group>"; };
 		7AAC136D250764960064393A /* GGTermServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGTermServiceViewController.xib; sourceTree = "<group>"; };
+		7AAC137125076CB00064393A /* GGFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGFilterModel.swift; sourceTree = "<group>"; };
+		7AAC137325076CE00064393A /* GGBackgroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGBackgroundModel.swift; sourceTree = "<group>"; };
+		7AAC137525076CEA0064393A /* GGStickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGStickerModel.swift; sourceTree = "<group>"; };
+		7AAC137725076CF40064393A /* GGModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGModeModel.swift; sourceTree = "<group>"; };
 		9581311C490A5D4E9608AEA0 /* Pods-GreatGirdProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.release.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.release.xcconfig"; sourceTree = "<group>"; };
 		DC9B6447E6179F2404FCD79D /* Pods-GreatGirdProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.debug.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		DE77926DC74284D2A75C4DD2 /* Pods_GreatGirdProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreatGirdProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,9 +115,9 @@
 			children = (
 				7AAC132425072DDB0064393A /* AppDelegate.swift */,
 				7AAC132825072DDB0064393A /* GGViewController.swift */,
+				7AAC13532507561D0064393A /* Edit */,
 				7AAC1360250761440064393A /* Setting */,
 				7AAC13582507577E0064393A /* Gold */,
-				7AAC13532507561D0064393A /* Edit */,
 				7AAC133925072EAE0064393A /* Base */,
 				7AAC132A25072DDB0064393A /* Main.storyboard */,
 				7AAC132D25072DDD0064393A /* Assets.xcassets */,
@@ -167,6 +175,7 @@
 			children = (
 				7AAC1354250756390064393A /* GGEditViewController.swift */,
 				7AAC1355250756390064393A /* GGEditViewController.xib */,
+				7AAC137025076CA30064393A /* Model */,
 			);
 			path = Edit;
 			sourceTree = "<group>";
@@ -209,6 +218,17 @@
 				7AAC1365250762CD0064393A /* GGSettingTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7AAC137025076CA30064393A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC137125076CB00064393A /* GGFilterModel.swift */,
+				7AAC137325076CE00064393A /* GGBackgroundModel.swift */,
+				7AAC137525076CEA0064393A /* GGStickerModel.swift */,
+				7AAC137725076CF40064393A /* GGModeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CDFE97928CBBA3F7CB200128 /* Frameworks */ = {
@@ -353,6 +373,7 @@
 				7AAC135A250757990064393A /* GGGoldViewController.swift in Sources */,
 				7AAC1362250761590064393A /* GGSettingViewController.swift in Sources */,
 				7AAC1352250735C00064393A /* StickerView.m in Sources */,
+				7AAC137225076CB00064393A /* GGFilterModel.swift in Sources */,
 				7AAC136A250764850064393A /* GGPrivacyViewController.swift in Sources */,
 				7AAC1366250762CD0064393A /* GGSettingTableViewCell.swift in Sources */,
 				7AAC136E250764960064393A /* GGTermServiceViewController.swift in Sources */,
@@ -361,8 +382,11 @@
 				7AAC1349250735A30064393A /* GGConstant.swift in Sources */,
 				7AAC1351250735C00064393A /* SingleHandGestureRecognizer.m in Sources */,
 				7AAC135E250759560064393A /* GGCoinCollectionViewCell.swift in Sources */,
+				7AAC137425076CE00064393A /* GGBackgroundModel.swift in Sources */,
 				7AAC133F25072EDF0064393A /* JPToast.swift in Sources */,
 				7AAC134025072EDF0064393A /* QMUIConfigurationTemplate.m in Sources */,
+				7AAC137825076CF40064393A /* GGModeModel.swift in Sources */,
+				7AAC137625076CEA0064393A /* GGStickerModel.swift in Sources */,
 				7AAC1356250756390064393A /* GGEditViewController.swift in Sources */,
 				7AAC132525072DDB0064393A /* AppDelegate.swift in Sources */,
 			);
