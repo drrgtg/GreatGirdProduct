@@ -37,6 +37,17 @@
 		7AAC137425076CE00064393A /* GGBackgroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137325076CE00064393A /* GGBackgroundModel.swift */; };
 		7AAC137625076CEA0064393A /* GGStickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137525076CEA0064393A /* GGStickerModel.swift */; };
 		7AAC137825076CF40064393A /* GGModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137725076CF40064393A /* GGModeModel.swift */; };
+		7AAC137C25076FFA0064393A /* GGFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137A25076FFA0064393A /* GGFeedbackViewController.swift */; };
+		7AAC137D25076FFA0064393A /* GGFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC137B25076FFA0064393A /* GGFeedbackViewController.xib */; };
+		7AAC1380250773C90064393A /* GGModeBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC137F250773C90064393A /* GGModeBGView.swift */; };
+		7AAC1384250774290064393A /* GGModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1382250774290064393A /* GGModeCollectionViewCell.swift */; };
+		7AAC1385250774290064393A /* GGModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC1383250774290064393A /* GGModeCollectionViewCell.xib */; };
+		7AAC1388250785010064393A /* UIImage+MaskImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1387250785010064393A /* UIImage+MaskImage.m */; };
+		7AAC138A250788E30064393A /* GGBackgroundBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1389250788E30064393A /* GGBackgroundBGView.swift */; };
+		7AAC139025078B740064393A /* GGStickerBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC138F25078B740064393A /* GGStickerBGView.swift */; };
+		7AAC139225078E580064393A /* GGFilterBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC139125078E580064393A /* GGFilterBGView.swift */; };
+		7AAC139525078F640064393A /* GGFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC139325078F640064393A /* GGFilterCollectionViewCell.swift */; };
+		7AAC139625078F640064393A /* GGFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC139425078F640064393A /* GGFilterCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +86,18 @@
 		7AAC137325076CE00064393A /* GGBackgroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGBackgroundModel.swift; sourceTree = "<group>"; };
 		7AAC137525076CEA0064393A /* GGStickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGStickerModel.swift; sourceTree = "<group>"; };
 		7AAC137725076CF40064393A /* GGModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGModeModel.swift; sourceTree = "<group>"; };
+		7AAC137A25076FFA0064393A /* GGFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGFeedbackViewController.swift; sourceTree = "<group>"; };
+		7AAC137B25076FFA0064393A /* GGFeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGFeedbackViewController.xib; sourceTree = "<group>"; };
+		7AAC137F250773C90064393A /* GGModeBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGModeBGView.swift; sourceTree = "<group>"; };
+		7AAC1382250774290064393A /* GGModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		7AAC1383250774290064393A /* GGModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGModeCollectionViewCell.xib; sourceTree = "<group>"; };
+		7AAC1386250785010064393A /* UIImage+MaskImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MaskImage.h"; sourceTree = "<group>"; };
+		7AAC1387250785010064393A /* UIImage+MaskImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MaskImage.m"; sourceTree = "<group>"; };
+		7AAC1389250788E30064393A /* GGBackgroundBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGBackgroundBGView.swift; sourceTree = "<group>"; };
+		7AAC138F25078B740064393A /* GGStickerBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGStickerBGView.swift; sourceTree = "<group>"; };
+		7AAC139125078E580064393A /* GGFilterBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGFilterBGView.swift; sourceTree = "<group>"; };
+		7AAC139325078F640064393A /* GGFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		7AAC139425078F640064393A /* GGFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGFilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		9581311C490A5D4E9608AEA0 /* Pods-GreatGirdProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.release.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.release.xcconfig"; sourceTree = "<group>"; };
 		DC9B6447E6179F2404FCD79D /* Pods-GreatGirdProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.debug.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		DE77926DC74284D2A75C4DD2 /* Pods_GreatGirdProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreatGirdProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				7AAC133B25072EDE0064393A /* JPToast.swift */,
+				7AAC1386250785010064393A /* UIImage+MaskImage.h */,
+				7AAC1387250785010064393A /* UIImage+MaskImage.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -175,6 +200,7 @@
 			children = (
 				7AAC1354250756390064393A /* GGEditViewController.swift */,
 				7AAC1355250756390064393A /* GGEditViewController.xib */,
+				7AAC137E250773AC0064393A /* View */,
 				7AAC137025076CA30064393A /* Model */,
 			);
 			path = Edit;
@@ -206,6 +232,8 @@
 				7AAC136D250764960064393A /* GGTermServiceViewController.xib */,
 				7AAC1368250764850064393A /* GGPrivacyViewController.swift */,
 				7AAC1369250764850064393A /* GGPrivacyViewController.xib */,
+				7AAC137A25076FFA0064393A /* GGFeedbackViewController.swift */,
+				7AAC137B25076FFA0064393A /* GGFeedbackViewController.xib */,
 				7AAC1363250762BC0064393A /* View */,
 			);
 			path = Setting;
@@ -229,6 +257,29 @@
 				7AAC137725076CF40064393A /* GGModeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7AAC137E250773AC0064393A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1381250773EE0064393A /* Cell */,
+				7AAC137F250773C90064393A /* GGModeBGView.swift */,
+				7AAC1389250788E30064393A /* GGBackgroundBGView.swift */,
+				7AAC138F25078B740064393A /* GGStickerBGView.swift */,
+				7AAC139125078E580064393A /* GGFilterBGView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AAC1381250773EE0064393A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1382250774290064393A /* GGModeCollectionViewCell.swift */,
+				7AAC1383250774290064393A /* GGModeCollectionViewCell.xib */,
+				7AAC139325078F640064393A /* GGFilterCollectionViewCell.swift */,
+				7AAC139425078F640064393A /* GGFilterCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CDFE97928CBBA3F7CB200128 /* Frameworks */ = {
@@ -311,11 +362,14 @@
 				7AAC133125072DDD0064393A /* LaunchScreen.storyboard in Resources */,
 				7AAC135F250759560064393A /* GGCoinCollectionViewCell.xib in Resources */,
 				7AAC132E25072DDD0064393A /* Assets.xcassets in Resources */,
+				7AAC1385250774290064393A /* GGModeCollectionViewCell.xib in Resources */,
 				7AAC1357250756390064393A /* GGEditViewController.xib in Resources */,
 				7AAC1350250735BF0064393A /* StickerView.bundle in Resources */,
+				7AAC137D25076FFA0064393A /* GGFeedbackViewController.xib in Resources */,
 				7AAC1367250762CD0064393A /* GGSettingTableViewCell.xib in Resources */,
 				7AAC136F250764960064393A /* GGTermServiceViewController.xib in Resources */,
 				7AAC132C25072DDB0064393A /* Main.storyboard in Resources */,
+				7AAC139625078F640064393A /* GGFilterCollectionViewCell.xib in Resources */,
 				7AAC136B250764850064393A /* GGPrivacyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,19 +423,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAC139525078F640064393A /* GGFilterCollectionViewCell.swift in Sources */,
 				7AAC132925072DDB0064393A /* GGViewController.swift in Sources */,
+				7AAC139025078B740064393A /* GGStickerBGView.swift in Sources */,
 				7AAC135A250757990064393A /* GGGoldViewController.swift in Sources */,
 				7AAC1362250761590064393A /* GGSettingViewController.swift in Sources */,
 				7AAC1352250735C00064393A /* StickerView.m in Sources */,
 				7AAC137225076CB00064393A /* GGFilterModel.swift in Sources */,
 				7AAC136A250764850064393A /* GGPrivacyViewController.swift in Sources */,
 				7AAC1366250762CD0064393A /* GGSettingTableViewCell.swift in Sources */,
+				7AAC139225078E580064393A /* GGFilterBGView.swift in Sources */,
 				7AAC136E250764960064393A /* GGTermServiceViewController.swift in Sources */,
+				7AAC138A250788E30064393A /* GGBackgroundBGView.swift in Sources */,
+				7AAC1380250773C90064393A /* GGModeBGView.swift in Sources */,
+				7AAC1388250785010064393A /* UIImage+MaskImage.m in Sources */,
 				7AAC1347250735680064393A /* GGBaseViewController.swift in Sources */,
+				7AAC1384250774290064393A /* GGModeCollectionViewCell.swift in Sources */,
 				7AAC1345250734DB0064393A /* GGBaseNavigationController.swift in Sources */,
 				7AAC1349250735A30064393A /* GGConstant.swift in Sources */,
 				7AAC1351250735C00064393A /* SingleHandGestureRecognizer.m in Sources */,
 				7AAC135E250759560064393A /* GGCoinCollectionViewCell.swift in Sources */,
+				7AAC137C25076FFA0064393A /* GGFeedbackViewController.swift in Sources */,
 				7AAC137425076CE00064393A /* GGBackgroundModel.swift in Sources */,
 				7AAC133F25072EDF0064393A /* JPToast.swift in Sources */,
 				7AAC134025072EDF0064393A /* QMUIConfigurationTemplate.m in Sources */,

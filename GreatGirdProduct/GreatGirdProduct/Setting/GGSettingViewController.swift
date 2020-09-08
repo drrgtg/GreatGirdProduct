@@ -46,18 +46,6 @@ class GGSettingViewController: GGBaseViewController {
             make.top.equalTo(titleLabel.snp.bottom).offset(10)
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 extension GGSettingViewController: QMUITableViewDelegate, QMUITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,9 +59,9 @@ extension GGSettingViewController: QMUITableViewDelegate, QMUITableViewDataSourc
             cell.rightLabel.text = PFCFBundleVersion()
             cell.accessoryType = .none
         case 1:
-            cell.leftLabel.text = "Clear Cache"
-            cell.rightLabel.text = cacheSize
-            cell.accessoryType = .none
+            cell.leftLabel.text = "Feedback"
+            cell.rightLabel.text = ""
+            cell.accessoryType = .disclosureIndicator
         case 2:
             cell.leftLabel.text = "Privacy Policy"
             cell.rightLabel.text = ""
@@ -93,9 +81,8 @@ extension GGSettingViewController: QMUITableViewDelegate, QMUITableViewDataSourc
         case 0:
             print("current Version")
         case 1:
-            JPToast.showSuccess("clear successed")
-            cacheSize = "0M"
-            tableView.reloadData()
+            let vc = GGFeedbackViewController()
+            cw_push(vc)
         case 2:
             let vc = GGPrivacyViewController()
             cw_push(vc)

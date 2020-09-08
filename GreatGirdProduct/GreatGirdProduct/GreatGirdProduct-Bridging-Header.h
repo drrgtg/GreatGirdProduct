@@ -11,5 +11,6 @@
 #import <QMUIKit.h>
 #import <SVProgressHUD.h>
 #import "StickerView.h"
+#import "UIImage+MaskImage.h"
 
 #endif /* GreatGirdProduct_Bridging_Header_h */

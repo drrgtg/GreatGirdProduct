@@ -50,13 +50,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1s-DT-EPo">
                             <rect key="frame" x="0.0" y="656" width="414" height="206"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xye-sm-6rv">
-                                    <rect key="frame" x="0.0" y="53" width="414" height="153"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="153" id="sN9-fQ-bQK"/>
-                                    </constraints>
-                                </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Wq-bR-N61">
                                     <rect key="frame" x="0.0" y="80" width="414" height="126"/>
                                     <subviews>
@@ -117,6 +110,13 @@
                                         <constraint firstAttribute="height" constant="126" id="YY5-tW-CjE"/>
                                     </constraints>
                                 </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xye-sm-6rv">
+                                    <rect key="frame" x="0.0" y="53" width="414" height="153"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="153" id="sN9-fQ-bQK"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
