@@ -30,6 +30,7 @@ class GGEditViewController: GGBaseViewController {
     var filterView: GGFilterBGView?
     
     var selectSticker: StickerView?
+    var simage: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +45,6 @@ class GGEditViewController: GGBaseViewController {
     }
     override func initSubviews() {
         super.initSubviews()
-        
         btn1.imagePosition = .top
         btn2.imagePosition = .top
         btn3.imagePosition = .top
@@ -96,6 +96,16 @@ class GGEditViewController: GGBaseViewController {
         v2.backgroundColor = toolsView.backgroundColor
         v3.backgroundColor = toolsView.backgroundColor
         v4.backgroundColor = toolsView.backgroundColor
+        
+        // right item
+        
+        // right
+        let rightBtn = QMUIButton(type: .custom)
+        rightBtn.setImage(UIImage(named: "icon_edit_see"), for: .normal)
+        rightBtn.sizeToFit()
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
+        rightBtn.addTarget(self, action: #selector(showOriginImage), for: .touchDown)
+        rightBtn.addTarget(self, action: #selector(hiddenOriginimage), for: .touchUpInside)
     }
     @IBAction func clickBtn1(_ sender: Any) {
         modeView?.isHidden = false
@@ -103,6 +113,13 @@ class GGEditViewController: GGBaseViewController {
             toolsView.bringSubviewToFront(tv)
         }
         toolsView.isHidden = false
+    }
+    @objc func showOriginImage() {
+        simage = saveImage()
+        contentImageView.image = image
+    }
+    @objc func hiddenOriginimage() {
+        contentImageView.image = simage
     }
     func hiddenModeView () {
         modeView?.isHidden = true
@@ -156,7 +173,14 @@ class GGEditViewController: GGBaseViewController {
         toolsView.isHidden = true
     }
     @IBAction func clickBtn5(_ sender: Any) {
-        
+        // use coin to save
+        let alert = QMUIAlertController(title: "Save Image", message: "Speed 3000 gold coins to save image", preferredStyle: .alert)
+        alert.addAction(QMUIAlertAction(title: "determine", style: .default, handler: { (_, _) in
+            print("determine")
+            self.payAndSave()
+        }))
+        alert.addCancelAction()
+        alert.showWith(animated: true)
     }
     func btn1ModeChanged() {
         modeView?.clickDownHandler = {[weak self] in
@@ -173,6 +197,12 @@ class GGEditViewController: GGBaseViewController {
             let nImage = UIImage.creatImage(withMaskImage: simage, andBackimage: originImage)
             sself.contentImageView.image = nImage
         }
+        // 默认生成一个
+        guard let mImage = modeView?.dataModel.modeBGs[0], let originImage = image else {
+            return
+        }
+        let nImage = UIImage.creatImage(withMaskImage: mImage, andBackimage: originImage)
+        contentImageView.image = nImage
     }
     func btn2ModeChanged() {
         backgroundView?.clickDownHandler = {[weak self] in
@@ -218,7 +248,6 @@ class GGEditViewController: GGBaseViewController {
         }
     }
     func addStickerView(_ image: UIImage) {
-        
         let stickerView = StickerView(contentFrame: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height), contentImage: image)
         stickerView?.enabledControl = false
         stickerView?.enabledBorder = false
@@ -227,6 +256,38 @@ class GGEditViewController: GGBaseViewController {
         imageContainerView.addSubview(stickerView!)
         stickerView?.center = imageContainerView.center
         selectSticker = stickerView
+    }
+    
+    func payAndSave() {
+        if let goldNumber = UserDefaults.standard.string(forKey: kIAPDefaultGoldNumber) {
+            if Int(goldNumber) ?? 0 < 3000 {
+                let vc = GGGoldViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            } else {
+                JPToast.showLoading("Saving")
+                UserDefaults.standard.setValue("\(Int(goldNumber)! - 3000)", forKey: kIAPDefaultGoldNumber)
+                simage = saveImage()
+                if let saveImage = simage {
+                    UIImageWriteToSavedPhotosAlbum(saveImage, self, #selector(imageSaveFinished(image:error:context:)), nil)
+                }
+            }
+        }
+    }
+    @objc func imageSaveFinished(image: UIImage, error: Error, context: UnsafeRawPointer) {
+        JPToast.hidLoading()
+        let vc = GGSaveViewController()
+        vc.image = simage
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    func saveImage() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(contentImageView.frame.size,false, 0.0);
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        contentImageView.layer.render(in: context)
+        let snapShotImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return snapShotImage
     }
 }
 extension GGEditViewController: StickerViewDelegate {

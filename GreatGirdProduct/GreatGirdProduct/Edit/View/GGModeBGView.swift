@@ -54,7 +54,6 @@ class GGModeBGView: UIView {
             make.height.equalTo(40)
         }
         self.addSubview(collectionView)
-        
     }
     @objc func clickDown() {
         clickDownHandler?()

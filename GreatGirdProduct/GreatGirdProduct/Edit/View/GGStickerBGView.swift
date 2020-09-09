@@ -10,7 +10,7 @@ import UIKit
 
 class GGStickerBGView: UIView {
 
-    var selIndex: Int = 0
+    var selIndex: Int = -1
 
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

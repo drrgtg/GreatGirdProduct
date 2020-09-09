@@ -48,6 +48,8 @@
 		7AAC139225078E580064393A /* GGFilterBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC139125078E580064393A /* GGFilterBGView.swift */; };
 		7AAC139525078F640064393A /* GGFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC139325078F640064393A /* GGFilterCollectionViewCell.swift */; };
 		7AAC139625078F640064393A /* GGFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC139425078F640064393A /* GGFilterCollectionViewCell.xib */; };
+		7AAC139A250870560064393A /* GGSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC1398250870560064393A /* GGSaveViewController.swift */; };
+		7AAC139B250870560064393A /* GGSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC1399250870560064393A /* GGSaveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		7AAC139125078E580064393A /* GGFilterBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGFilterBGView.swift; sourceTree = "<group>"; };
 		7AAC139325078F640064393A /* GGFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		7AAC139425078F640064393A /* GGFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGFilterCollectionViewCell.xib; sourceTree = "<group>"; };
+		7AAC1398250870560064393A /* GGSaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGSaveViewController.swift; sourceTree = "<group>"; };
+		7AAC1399250870560064393A /* GGSaveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGSaveViewController.xib; sourceTree = "<group>"; };
 		9581311C490A5D4E9608AEA0 /* Pods-GreatGirdProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.release.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.release.xcconfig"; sourceTree = "<group>"; };
 		DC9B6447E6179F2404FCD79D /* Pods-GreatGirdProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatGirdProduct.debug.xcconfig"; path = "Target Support Files/Pods-GreatGirdProduct/Pods-GreatGirdProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		DE77926DC74284D2A75C4DD2 /* Pods_GreatGirdProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreatGirdProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +142,7 @@
 			children = (
 				7AAC132425072DDB0064393A /* AppDelegate.swift */,
 				7AAC132825072DDB0064393A /* GGViewController.swift */,
+				7AAC1397250870430064393A /* Save */,
 				7AAC13532507561D0064393A /* Edit */,
 				7AAC1360250761440064393A /* Setting */,
 				7AAC13582507577E0064393A /* Gold */,
@@ -282,6 +287,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		7AAC1397250870430064393A /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC1398250870560064393A /* GGSaveViewController.swift */,
+				7AAC1399250870560064393A /* GGSaveViewController.xib */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
 		CDFE97928CBBA3F7CB200128 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +379,7 @@
 				7AAC1385250774290064393A /* GGModeCollectionViewCell.xib in Resources */,
 				7AAC1357250756390064393A /* GGEditViewController.xib in Resources */,
 				7AAC1350250735BF0064393A /* StickerView.bundle in Resources */,
+				7AAC139B250870560064393A /* GGSaveViewController.xib in Resources */,
 				7AAC137D25076FFA0064393A /* GGFeedbackViewController.xib in Resources */,
 				7AAC1367250762CD0064393A /* GGSettingTableViewCell.xib in Resources */,
 				7AAC136F250764960064393A /* GGTermServiceViewController.xib in Resources */,
@@ -442,6 +457,7 @@
 				7AAC1345250734DB0064393A /* GGBaseNavigationController.swift in Sources */,
 				7AAC1349250735A30064393A /* GGConstant.swift in Sources */,
 				7AAC1351250735C00064393A /* SingleHandGestureRecognizer.m in Sources */,
+				7AAC139A250870560064393A /* GGSaveViewController.swift in Sources */,
 				7AAC135E250759560064393A /* GGCoinCollectionViewCell.swift in Sources */,
 				7AAC137C25076FFA0064393A /* GGFeedbackViewController.swift in Sources */,
 				7AAC137425076CE00064393A /* GGBackgroundModel.swift in Sources */,
