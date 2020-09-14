@@ -12,8 +12,7 @@ import CWLateralSlide
 
 class GGViewController: GGBaseViewController {
     
-    @IBOutlet weak var settingBtn: UIButton!
-    @IBOutlet weak var goldBtn: UIButton!
+    var goldBtn: QMUIButton?
     override func navigationBarBackgroundImage() -> UIImage? {
         UIImage.qmui_image(with: .clear)
     }
